@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Iowa Housing Price Predictor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--Header-->
+<div class="jumbotron text-center">
+  <h1>Iowa Housing Price Predictor</h1>
+  <p>Using machine learning to predict the price of a house in Akron, Ohio!</p> 
+</div>
+<!--Feature Selector-->
+<div class="col-sm-12">
+<h3>Price Predicting Features</h3>
+<p>Features Used to Predict prices</p>
+<p>Choose any or all To predict home price.</p>
+</div>
+    <div class="col-sm-4">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Overall Quality
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Very Excellent</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Excellent</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Very Good</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Good</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Above Average</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Average</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Below Average</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fair</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Poor</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Very Poor</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                    <li role="presentation" class="divider"></li>
+                </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Above Ground Square Footage
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">500</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1500</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2500</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5000</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Garage Car Space
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0 (No Garage)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 Car</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 Car</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 Car</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 Car</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    <div class="col-sm-4">
+      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Garage Area Square Footage
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">o</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">334</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">480</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">576</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1418</a></li>
+                <li role="presentation" class="divider"></li>
+            </ul>
+            </div>
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Total Basement Square Footage
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">795</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">991</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1298</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6110</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">First Floor Square Footage
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">334</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">882</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1087</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1391</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4692</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Second Floor Square Footage
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">728</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2065</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Full Baths
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Total Rooms Above Ground
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">14</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Year Built
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1872</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1954</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1973</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2000</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2010</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-sm-4">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Year Remodeled
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1950</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1967</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1994</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2004</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2010</a></li>
+                        <li role="presentation" class="divider"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    <div class="col-sm-4"> 
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Year Garage Built
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1900</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1961</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1980</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2002</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2010</a></li>
+                <li role="presentation" class="divider"></li>
+            </ul>
+        </div>
+        </div>       
+    </div>
+    <!--Pricing Map-->
+    <div class="col-sm-8">
+    <h3>Average Neighborhood Price</h3>
+    <p>put Map here</p>
+    </div>
+  </div>
+</div>
+
+
