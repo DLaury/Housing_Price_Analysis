@@ -1,0 +1,38 @@
+from flask import Flask, request, render_template
+from flask_restful import reqparse, abort, Api, Resource
+import numpy as np
+from AdvancedRegression_v3 import apply_algorithm 
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+
+    return render_template("index.html")
+
+@app.route("/data")
+def data():
+
+    return render_template("data.html")
+
+@app.route("/form", methods=['GET', 'POST'])
+def interpret(guess=None):
+    if request.method == 'POST':
+        quality = request.form['OverallQual']
+        livable_area = 0
+        livable_area = request.form['GrLivArea']
+        num_cars = 0
+        num_cars = request.form['GarageCars']
+        garage_area = 0
+        garage_area = request.form['GarageArea']
+        basement_sqft = 0
+        basement_sqft = request.form['TotalBsmtSF']
+        first_fl_sqft = 0
+        first_fl_sqft = request.form['1stFlrSF']
+
+        guess = apply_algorithm(quality, livable_area, num_cars, garage_area, basement_sqft, first_fl_sqft)
+
+    return render_template("form.html", guess=guess)
+
+if __name__ == '__main__':
+    app.run(debug=True)

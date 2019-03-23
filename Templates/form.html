@@ -26,8 +26,12 @@
     <div class="row">
         <div class="col-md-8">
       <h1>House Price Prediction</h1>
-      <h3>Prediction: </h3>
-      <form method="POST" action="/send" role="form", name="modelform">
+      <h3>Prediction: 
+          {% if guess %}
+            ${{ guess }}
+          {% endif %}
+      </h3>
+      <form method="POST" action="/form" role="form", name="modelform">
 
         <div class="form-group">
             <label for="inputNeighborhood">Location</label>
@@ -73,16 +77,16 @@
             <label for="inputOverallQual">Rates the overall material and finish of the house</label>
             <select class="form-control" id="inputOverallQual" name="OverallQual">
                 <option value="0"></option>
-                <option value="1">Very Excellent</option>
-                <option value="2">Excellent</option>
-                <option value="3">Very Good</option>
-                <option value="4">Good</option>
-                <option value="5">Above Average</option>
-                <option value="6">Average</option>
-                <option value="7">Below Average</option>
-                <option value="8">Fair</option>
-                <option value="9">Poor</option>
-                <option value="10">Very Poor</option>
+                <option value="10">Very Excellent</option>
+                <option value="9">Excellent</option>
+                <option value="8">Very Good</option>
+                <option value="7">Good</option>
+                <option value="6">Above Average</option>
+                <option value="5">Average</option>
+                <option value="4">Below Average</option>
+                <option value="3">Fair</option>
+                <option value="2">Poor</option>
+                <option value="1">Very Poor</option>
 
             </select>
 
