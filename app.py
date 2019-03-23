@@ -33,10 +33,13 @@ def interpret(guess=None, quality=None, livable_area=None, num_cars=None, garage
 
         guess = apply_algorithm(quality, livable_area, num_cars, garage_area, basement_sqft, first_fl_sqft)
 
+    return render_template("form.html", guess=guess, quality=quality, livable_area=livable_area, num_cars=num_cars, garage_area=garage_area, basement_sqft=basement_sqft, first_fl_sqft=first_fl_sqft)
+
 @app.route("/dashboard")
 def dashboard():
 
     return render_template("/dashboard.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
