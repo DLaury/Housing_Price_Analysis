@@ -36,7 +36,6 @@
         <div class="form-group">
             <label for="inputOverallQual">Rates the overall material and finish of the house</label>
             <select class="form-control" id="inputOverallQual" name="OverallQual" required>
-                {% if quality %} <option value = {{  quality  }}></option> {% endif %}
                 <option value="0"></option>
                 <option value="10">Very Excellent</option>
                 <option value="9">Excellent</option>
@@ -56,21 +55,21 @@
 
         <div class="form-group">
             <label for="inputGrLivArea">Above grade (ground) living area square feet</label>
-            <input type="number" step= ".000001" class="form-control" id="inputGrLivArea" name="GrLivArea" placeholder="Insert Square foot number" value={% if livable_area %} {{  livable_area  }} {% endif %} required>
+            <input type="number" step= ".000001" min=0 class="form-control" id="inputGrLivArea" name="GrLivArea" placeholder="Insert Square foot number" value={% if livable_area %} {{  livable_area  }} {% endif %} required>
 
 
         </div>
 
         <div class="form-group">
             <label for="inputGarageCars">Size of garage in car capacity</label>
-            <input type="number" step="1" class="form-control" id="inputGarageCars" name="GarageCars" placeholder="Insert number of cars" value = {% if num_cars %} {{  num_cars  }} {% endif %} required>
+            <input type="number" step="1" min=0 class="form-control" id="inputGarageCars" name="GarageCars" placeholder="Insert number of cars" value = {% if num_cars %} {{  num_cars  }} {% endif %} required>
 
 
         </div>
 
         <div class="form-group">
             <label for="inputGarageArea">Size of garage in square feet</label>
-            <input type="number" step=".000001" class="form-control" id="inputGarageArea" name="GarageArea" placeholder="Insert number of square foot" value = {% if garage_area %} {{  garage_area  }} {% endif %} required>
+            <input type="number" step=".000001" min=0 class="form-control" id="inputGarageArea" name="GarageArea" placeholder="Insert number of square foot" value = {% if garage_area %} {{  garage_area  }} {% endif %} required>
 
 
         </div>
@@ -78,13 +77,13 @@
       
         <div class="form-group">
             <label for="inputTotalBsmtSF">Total square feet of basement area</label>
-            <input type="number" step=".000001" class="form-control" id="inputTotalBsmtSF" name="TotalBsmtSF" placeholder="Insert number of square foot" value = {% if basement_sqft %} {{  basement_sqft  }} {% endif %} required>
+            <input type="number" step=".000001" min=0 class="form-control" id="inputTotalBsmtSF" name="TotalBsmtSF" placeholder="Insert number of square foot" value = {% if basement_sqft %} {{  basement_sqft  }} {% endif %} required>
 
 
         </div>
         <div class="form-group">
             <label for="input1stFlrSF">First floor square feet</label>
-            <input type="number" step=".000001" class="form-control" id="input1stFlrSF" name="1stFlrSF" placeholder="Insert number of square foot" value = {% if first_fl_sqft  %} {{  first_fl_sqft  }} {% endif %} required>
+            <input type="number" step=".000001" min=0 class="form-control" id="input1stFlrSF" name="1stFlrSF" placeholder="Insert number of square foot" value = {% if first_fl_sqft  %} {{  first_fl_sqft  }} {% endif %} required>
 
 
         </div>
