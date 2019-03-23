@@ -19,16 +19,12 @@ def interpret(guess=None, quality=None, livable_area=None, num_cars=None, garage
 
     if request.method == 'POST':
         quality = request.form['OverallQual']
-        livable_area = 0
         livable_area = request.form['GrLivArea']
-        num_cars = 0
         num_cars = request.form['GarageCars']
-        garage_area = 0
         garage_area = request.form['GarageArea']
-        basement_sqft = 0
         basement_sqft = request.form['TotalBsmtSF']
-        first_fl_sqft = 0
         first_fl_sqft = request.form['1stFlrSF']
+        print(quality)
 
         guess = apply_algorithm(quality, livable_area, num_cars, garage_area, basement_sqft, first_fl_sqft)
 
