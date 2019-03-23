@@ -36,17 +36,16 @@
         <div class="form-group">
             <label for="inputOverallQual">Rates the overall material and finish of the house</label>
             <select class="form-control" id="inputOverallQual" name="OverallQual" required>
-                <option value="10" {% if quality==10 %} selected {% endif %}>Very Excellent</option>
-                <option value="9" {% if quality==9 %} selected {% endif %}>Excellent</option>
-                <option value="8" {% if quality==8 %} selected {% endif %}>Very Good</option>
-                <option value="7" {% if quality==7 %} selected {% endif %}>Good</option>
-                <option value="6" {% if quality==6 %} selected {% endif %}>Above Average</option>
-                <option value="5" {% if quality==5 %} selected {% endif %}>Average</option>
-                <option value="4" {% if quality==4 %} selected {% endif %}>Below Average</option>
-                <option value="3" {% if quality==3 %} selected {% endif %}>Fair</option>
-                <option value="2" {% if quality==2 %} selected {% endif %}>Poor</option>
-                <option value="1" {% if quality==1 %} selected {% endif %}>Very Poor</option>
-
+                <option value="10" {% if quality=='10' %} selected {% endif %}>Very Excellent</option>
+                <option value="9" {% if quality=='9' %} selected {% endif %}>Excellent</option>
+                <option value="8" {% if quality=='8' %} selected {% endif %}>Very Good</option>
+                <option value="7" {% if quality=='7' %} selected {% endif %}>Good</option>
+                <option value="6" {% if quality=='6' %} selected {% endif %}>Above Average</option>
+                <option value="5" {% if quality=='5' %} selected {% endif %}>Average</option>
+                <option value="4" {% if quality=='4' %} selected {% endif %}>Below Average</option>
+                <option value="3" {% if quality=='3' %} selected {% endif %}>Fair</option>
+                <option value="2" {% if quality=='2' %} selected {% endif %}>Poor</option>
+                <option value="1" {% if quality=='1' %} selected {% endif %}>Very Poor</option>
             </select>
 
 
