@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Housing Prediction</title>
+    <meta charset="UTF-8">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style> 
+        body{
+            background-color: #FFD700
+        }
+  </style>
+  
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+      <h1>House Price Prediction</h1>
+      <h3>Prediction: 
+          {% if guess %}
+            ${{ guess }}
+          {% endif %}
+      </h3>
+      <form method="POST" action="/form" role="form", name="modelform">
+
+        <div class="form-group">
+            <label for="inputNeighborhood">Location</label>
+            <select class="form-control" id="inputNeighborhood" name="Neighborhood" placeholder="Name">
+              <option value="0"></option>
+              <option value="1">Bloomington Heights</option>
+              <option value="2">Bluestem</option>
+              <option value="3">Briardale</option>
+              <option value="4">Brookside</option>
+              <option value="5">Clear Creek</option>
+              <option value="6">College Creek</option>
+              <option value="7">Crawford</option>
+              <option value="8">Edwards</option>
+              <option value="9">Gilbert</option>
+              <option value="10">Iowa DOT and Rail Road</option>
+              <option value="11">Meadow Village</option>
+              <option value="12">Mitchell</option>
+              <option value="13">North Ames</option>
+              <option value="14">Northridge</option>
+              <option value="15">Northpark Villa</option>
+              <option value="16">Northridge Heights</option>
+              <option value="17">Northridge Heights</option>
+              <option value="18">Northwest Ames</option>
+              <option value="19">Old Town</option>
+              <option value="20">South & West of Iowa State University</option>
+              <option value="21">Sawyer</option>
+              <option value="22">Sawyer West</option>
+              <option value="23">Somerset</option>
+              <option value="24">Stone Brook</option>
+              <option value="25">Timberland</option>
+              <option value="26">Veenker</option>
+
+
+
+
+
+            </select>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputOverallQual">Rates the overall material and finish of the house</label>
+            <select class="form-control" id="inputOverallQual" name="OverallQual" required>
+                <option value="0"></option>
+                <option value="10">Very Excellent</option>
+                <option value="9">Excellent</option>
+                <option value="8">Very Good</option>
+                <option value="7">Good</option>
+                <option value="6">Above Average</option>
+                <option value="5">Average</option>
+                <option value="4">Below Average</option>
+                <option value="3">Fair</option>
+                <option value="2">Poor</option>
+                <option value="1">Very Poor</option>
+
+            </select>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputGrLivArea">Above grade (ground) living area square feet</label>
+            <input type="text" class="form-control" id="inputGrLivArea" name="GrLivArea" placeholder="Insert Square foot number" required>
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputGarageCars">Size of garage in car capacity</label>
+            <input type="text" class="form-control" id="inputGarageCars" name="GarageCars" placeholder="Insert number of cars" required>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputGarageArea">Size of garage in square feet</label>
+            <input type="text" class="form-control" id="inputGarageArea" name="GarageArea" placeholder="Insert number of square foot" required>
+
+
+        </div>
+
+      
+        <div class="form-group">
+            <label for="inputTotalBsmtSF">Total square feet of basement area</label>
+            <input type="text" class="form-control" id="inputTotalBsmtSF" name="TotalBsmtSF" placeholder="Insert number of square foot" required>
+
+
+        </div>
+        <div class="form-group">
+            <label for="input1stFlrSF">First floor square feet</label>
+            <input type="text" class="form-control" id="input1stFlrSF" name="1stFlrSF" placeholder="Insert number of square foot" required>
+        </div>
+        <input type="submit" value="submit" class="btn btn-default">
+      </form>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+
+        
+</body>
+</html>
