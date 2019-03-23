@@ -36,6 +36,7 @@
         <div class="form-group">
             <label for="inputOverallQual">Rates the overall material and finish of the house</label>
             <select class="form-control" id="inputOverallQual" name="OverallQual" required>
+                {% if quality %} <option value = {{  quality  }}></option> {% endif %}
                 <option value="0"></option>
                 <option value="10">Very Excellent</option>
                 <option value="9">Excellent</option>
