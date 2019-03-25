@@ -4,7 +4,6 @@ import warnings
 from sklearn.preprocessing import Imputer
 
 warnings.filterwarnings("ignore")
-warnings.warn("ignore")
 
 houseTrain = pd.read_csv('Data/train.csv')
 houseTrain.head()
