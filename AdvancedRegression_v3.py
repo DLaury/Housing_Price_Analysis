@@ -1,5 +1,10 @@
 import numpy as np
 import pandas as pd
+import warnings
+from sklearn.preprocessing import Imputer
+
+warnings.filterwarnings("ignore")
+warnings.warn("ignore")
 
 houseTrain = pd.read_csv('Data/train.csv')
 houseTrain.head()
@@ -9,7 +14,6 @@ train = houseTrain
 X = train.loc[:, ['OverallQual', 'GrLivArea', 'GarageCars', 'GarageArea', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'FullBath', 'TotRmsAbvGrd', 'YearBuilt', 'YearRemodAdd', 'GarageYrBlt']]
 y = train['SalePrice'].values.reshape(-1,1)
 
-from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values = 'NaN', strategy= 'mean', axis =0)
 imputer = imputer.fit(X)
 X = imputer.transform(X)

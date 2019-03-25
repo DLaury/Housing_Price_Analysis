@@ -24,7 +24,6 @@ def interpret(guess=None, quality=None, livable_area=None, num_cars=None, garage
         garage_area = request.form['GarageArea']
         basement_sqft = request.form['TotalBsmtSF']
         first_fl_sqft = request.form['1stFlrSF']
-        print(quality)
 
         guess = apply_algorithm(quality, livable_area, num_cars, garage_area, basement_sqft, first_fl_sqft)
 
@@ -36,4 +35,4 @@ def dashboard():
     return render_template("/dashboard.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
