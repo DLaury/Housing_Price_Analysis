@@ -14,7 +14,9 @@ Luckily the given csv dataset gives a robust amount of
 
 Choosing a model:
 Mean Squared Error: The sum, over all the data points, of the square of the difference between the predicted and actual target variable.
+
 ![Alt text](https://raw.githubusercontent.com/DLaury/Housing_Price_Analysis/master/Iowa%20Images/MSE.png "MSE")
+
 
 Lasso Model: MSE 0.235, R2: 0.7959
 Ridge Model: MSE: 0.23, R2: 0.80
