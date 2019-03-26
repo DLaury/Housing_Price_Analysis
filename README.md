@@ -21,7 +21,7 @@ Mean Squared Error: The sum, over all the data points, of the square of the diff
 
 
 Lasso Model: MSE 0.235, R2: 0.7959
-
+![Alt text](https://raw.githubusercontent.com/DLaury/Housing_Price_Analysis/master/Iowa%20Images/Ridge%20Regression.png)
 Ridge Regression Model: MSE: 0.23, R2: 0.80
 
 ElasticNet Model: MSE: 0.233, R2: 0.798
