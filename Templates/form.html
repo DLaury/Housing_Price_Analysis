@@ -35,6 +35,13 @@
             ${{ guess }}
           {% endif %}
       </h3>
+      <div>
+        <a href="{{ url_for('jsonified') }}">
+          <button type="button">
+            Your Data
+          </button>
+        </a>  
+      </div>
       <form method="POST" action="/form" role="form", name="modelform">
 
         <div class="form-group">

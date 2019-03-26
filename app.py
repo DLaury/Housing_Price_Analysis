@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, jsonify, url_for
 import numpy as np
 from AdvancedRegression_v3 import apply_algorithm 
 
