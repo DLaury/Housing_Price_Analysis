@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify, url_for
 import numpy as np
 from AdvancedRegression_v3 import apply_algorithm 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 # Create a list to hold our data
 my_data = []
@@ -18,7 +18,7 @@ def data():
     return render_template("data.html")
 
 @app.route("/form", methods=['GET', 'POST'])
-def interpret(guess=None, quality=None, livable_area=None, num_cars=None, garage_area=None, basement_sqft=None, first_fl_sqft=None):
+def form(guess=None, quality=None, livable_area=None, num_cars=None, garage_area=None, basement_sqft=None, first_fl_sqft=None):
 
     if request.method == 'POST':
         quality = request.form['OverallQual']
@@ -52,8 +52,12 @@ def jsonified():
 @app.route("/dashboard")
 def dashboard():
 
-    return render_template("/dashboard.html")
+    return render_template("dashboard.html")
 
+@app.route("/contact")
+def contact():
 
+    return render_template("contact.html")
+    
 if __name__ == '__main__':
     app.run(debug=False)
