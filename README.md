@@ -14,12 +14,9 @@ By applying a machine learning regression algorithm we were able to train our pr
 **Home Features Used:**
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Dataframe.png)
 
-Overall house Quality
-Total living area not including basement
-Number of spaces available for cars in a garage
-Garage Size (Square Feet)
-Total Basement Square Feet
-1st floor square feet
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Explained_Variance.png)
+
+Principal Component Analysis revealed that the majority of the variance in home prices could be explained with these six features. 
 
 **Model:**
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Elastic_Net_Model.png)
@@ -35,8 +32,10 @@ R-Squared(R2): Measures how close the data are to the fitted regression line/the
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Chart.png)
 
-![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Predictions_Vs_Actual.png)
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Predict_vs_actual_percentage.png)
 
 Our scores indicate that our model explains 79.8% of the response variable variation, and have an average error of 0.233. Put more simply, our model is able to predict what the selling price of a house in Ames, Iowa will be with an accuracy rate of about 80% 
 
+**New Home Price Predictor:**
 
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Predictor_algorithm.png)
