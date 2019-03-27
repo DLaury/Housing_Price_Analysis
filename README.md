@@ -6,9 +6,12 @@ Our team set out to create a machine learning algorithm that can predict of sale
 By applying a machine learning regression algorithm we were able to train our program to see the effect of different individual house features (Size, quality, etc) on the final sale price of the house. To showcase this we built a website where you can input the parameters of a new house and the algorithm will return it's predicted value.
 
 ## Overview
+Below We check for the distribution of the sale price, so that we know its properties for when we want to conduct some regression analysis. From the histogram we can see that our variable is reasonably normally distributed. 
+
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Distribution_SalePrice.JPG)
 
-We check for the distribution of the sale price, so that we know its properties for when we want to conduct some regression analysis. From the histogram we can see that our variable is reasonably normally distributed. 
+The Correlation matrix is computed into what is known as the correlation coefficient, which ranges between -1 and +1. This heat map gives us a better understanding of the correlation between the different variables. A perfect correlation implies that
+as one of the variable woudld explain most of movement of the sale price.
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix.JPG)
 
