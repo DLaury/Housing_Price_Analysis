@@ -8,6 +8,8 @@ By applying a machine learning regression algorithm we were able to train our pr
 ## Overview
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix.JPG)
 
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix%202.JPG)
+
 
 **Home Features Used:**
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Dataframe.png)
