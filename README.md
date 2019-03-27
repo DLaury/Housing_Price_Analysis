@@ -17,6 +17,8 @@ one of the variable would explain most of movement of the sale price.
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix%202.JPG)
 
+**Dealing with missing data:**
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Missing_Data.JPG)
 
 **Home Features Used:**
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Dataframe.png)
