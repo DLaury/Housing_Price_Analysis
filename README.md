@@ -6,7 +6,7 @@ Our team set out to create a machine learning algorithm that can predict of sale
 By applying a machine learning regression algorithm we were able to train our program to see the effect of different individual house features (Size, quality, etc) on the final sale price of the house. To showcase this we built a website where you can input the parameters of a new house and the algorithm will return it's predicted value.
 
 ## Overview
-Below We check for the distribution of the sale price, so that we know its properties for when we want to conduct some regression analysis. From the histogram we can see that our variable is reasonably normally distributed. 
+Below, we check for the distribution of the sale price, so that we know its properties for when we want to conduct some regression analysis. From the histogram we can see that our variable is reasonably normally distributed. 
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Distribution_SalePrice.JPG)
 
