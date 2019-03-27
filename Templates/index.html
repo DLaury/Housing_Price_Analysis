@@ -27,14 +27,17 @@
   body{
       background-color: #FFD700
   }
-  btn-xlg{
-  color: white;
-}
-button{
-  background-color: #008CBA;
-  font-size: 24px;
-}
 
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
 </style>
 
 </head>
@@ -97,17 +100,14 @@ button{
                 <h1 class="entry-title">About</h1>	</header><!-- .entry-header -->
         
             <div class="entry-content">
-                <p id="justify">We opened the doors of our website with a simple goal: to inspire and help people calculate the  homes in Ames, Iowa</p>
+                <p id="justify">We opened the doors of our website with a simple goal: to inspire and help people calculate the  homes in Ames, Iowa.</p>
                 <P id="justify">Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. 
                    But this model proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
-                With 12 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this website helps you to predict the final price of each home.</P>
+                With 6 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this website helps you to predict the final price of each home.</P>
             
             <div class="text-center">
-                <a href="{{ url_for ('form') }}">
-                    <button type=“button” class="btn-xlg">
-                    Click Here to Begin!
-                    </button>
-                  </a>
+                <a style=font-size:30px  href="{{ url_for ('form') }}" target="_blank">Click Here to Begin!</a>
+                    
             </div><!-- .entry-content -->
         
             
