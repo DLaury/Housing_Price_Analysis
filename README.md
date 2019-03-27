@@ -10,8 +10,8 @@ Below, we check for the distribution of the sale price, so that we know its prop
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Distribution_SalePrice.JPG)
 
-The Correlation matrix is computed into what is known as the correlation coefficient, which ranges between -1 and +1. This heat map gives us a better understanding of the correlation between the different variables. A perfect correlation implies that
-as one of the variable woudld explain most of movement of the sale price.
+The correlation matrix is computed into what is known as the correlation coefficient, which ranges between -1 and +1. This heat map gives us a better understanding of the correlation between the different variables. A perfect correlation implies that
+one of the variable woudld explain most of movement of the sale price.
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix.JPG)
 
