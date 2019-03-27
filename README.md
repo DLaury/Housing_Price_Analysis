@@ -8,6 +8,8 @@ By applying a machine learning regression algorithm we were able to train our pr
 ## Overview
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Distribution_SalePrice.JPG)
 
+We check for the distribution of the sale price, so that we know its properties for when we want to conduct some regression analysis. From the histogram we can see that our variable is reasonably normally distributed. 
+
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix.JPG)
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Correlation%20Matrix%202.JPG)
