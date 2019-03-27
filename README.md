@@ -7,7 +7,7 @@ By applying machine learning regression algorithms we were able to analyze the f
 
 
 Home Features Used: 
-https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Dataframe.png
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Dataframe.png)
 
 Overall house Quality
 Total living area not including basement
@@ -17,15 +17,15 @@ Total Basement Square Feet
 1st floor square feet
 
 Model:
-https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Elastic_Net_Model.png
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Elastic_Net_Model.png)
 
 Elastic Net Regression was used because it works well with datasets that have correlated paramters. (e.g. Number of cars and garage size)
 
 
 Results:
-https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Chart.png
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Chart.png)
 
-https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Predictions_Vs_Actual.png
+![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Predictions_Vs_Actual.png)
 
 Mean Squared Error (MSE): Measures the average difference between the estimated values and what is estimated. The closer the MSE is to zero the better the models is predicting values.
 
