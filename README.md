@@ -28,6 +28,7 @@ R-Squared(R2): Measures how close the data are to the fitted regression line/the
 
 
 **Results:**
+
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Chart.png)
 
 ![Alt text](https://github.com/DLaury/Housing_Price_Analysis/blob/master/Iowa%20Images/Predictions_Vs_Actual.png)
